@@ -1,0 +1,25 @@
+//subclasse da classe empregado
+public class vendedor extends empregado{
+  //valorVendas (correspondente ao valor monetário das vendas efetivamente efetuadas pelo vendedor) e comissao (correspondente à porcentagem do valorVendas que será adicionado ao vencimento base do vendedor).
+  private double valorVendas;
+  private double comissao;
+  //Construtor:
+  public vendedor(String nome, String endereco, String telefone, int codigoSetor, double salarioBase, double imposto, double valorVendas, double comissao){
+    super(nome, endereco, telefone, codigoSetor, salarioBase, imposto);
+    this.valorVendas = valorVendas;
+    this.comissao = comissao;
+  }
+  //Métodos:
+  public double getValorVendas(){
+    return valorVendas;
+  }
+  public void setValorVendas(double valorVendas){
+    this.valorVendas = valorVendas;
+  }
+  public double getComissao(){
+    return comissao;
+  }
+  public void setComissao(double comissao){
+  this.comissao = comissao;
+  }
+}
