@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+    empregado empregado= new empregado("João", "Rua A", "123456789", 1, 1000, 0.1);
+    System.out.println(empregado.toString());
+    empregado.calcularSalario();
+    operario operario= new operario("Maria", "Rua B", "987654321", 2,2222, 0.05, 5000, 0.05);
+    System.out.println(operario.toString());
+    operario.calcularSalario();
+    administrador administrador= new administrador("Pedro", "Rua C", "555555555", 3,3333, 0.1, 1000);
+    System.out.println(administrador.toString());
+    administrador.calcularSalario();
+    fornecedor fornecedor= new fornecedor("Ana", "Rua D", "444444444", 5000, 1000);
+    System.out.println(fornecedor.toString());
+    fornecedor.obterSaldo();
+    vendedor vendedor= new vendedor("Carlos", "Rua E", "333333333" ,4, 2000, 0.05, 5000, 0.1);
+    System.out.println(vendedor.toString());
+    vendedor.calcularSalario();
+}
+}
