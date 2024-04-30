@@ -1,0 +1,30 @@
+class fornecedor extends pessoa{
+  private int valorCredito;
+  private int valorDivida;
+  public fornecedor(String nome, String endereco, String telefone, int valorCredito, int valorDivida) {
+    super(nome, endereco, telefone);
+    this.valorCredito = valorCredito;
+    this.valorDivida = valorDivida;
+  }
+  // Métodos seletores e modificadores
+  public int getValorCredito(){
+    return valorCredito;
+  }
+  public void setValorCredito(int valorCredito){
+    this.valorCredito = valorCredito;
+  }
+  public int getValorDivida(){
+    return valorDivida;
+  }
+  public void setValorDivida(int valorDivida){
+    this.valorDivida = valorDivida;
+  }
+  // Métodos especiais
+  public String toString(){
+    return "Nome: " + getNome() + "\nEndereço: " + getEndereco() + "\nTelefone: " + getTelefone() + "\nValor do Crédito: " + valorCredito + "\nValor da Dívida: " + valorDivida;
+  }
+
+  public void obterSaldo(){
+    System.out.println("Saldo: " + (valorCredito - valorDivida));
+  }
+}
